@@ -1,0 +1,94 @@
+
+> n8n@ build C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest
+> lerna exec npm run build
+
+
+> n8n-workflow@0.86.0 build C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\workflow
+> tsc
+
+
+> n8n-design-system@0.11.0 build C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\design-system
+> npm run build:theme
+
+
+> n8n-design-system@0.11.0 build:theme C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\design-system
+> gulp build:theme
+
+[[90m23:00:24[39m] Using gulpfile ~\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\design-system\gulpfile.js
+[[90m23:00:24[39m] Starting 'build:theme'...
+[[90m23:00:24[39m] Starting 'compileTheme'...
+[[90m23:00:26[39m] Finished 'compileTheme' after 2 s
+[[90m23:00:26[39m] Starting 'copyThemeFonts'...
+[[90m23:00:26[39m] Finished 'copyThemeFonts' after 24 ms
+[[90m23:00:26[39m] Finished 'build:theme' after 2.02 s
+
+> n8n-core@0.104.0 build C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\core
+> tsc
+
+
+> n8n-editor-ui@0.129.0 build C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\editor-ui
+> cross-env VUE_APP_PUBLIC_PATH="/%BASE_PATH%/" vue-cli-service build
+
+
+Starting type checking and linting service...
+Using 1 worker with 2048MB memory limit
+
+> n8n-nodes-base@0.160.0 build C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\nodes-base
+> tsc && gulp build:icons && gulp build:translations
+
+ WARNING  Compiled with 2 warnings23:00:57
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  json.worker.js (249 KiB)
+  ts.worker.js (4.5 MiB)
+  js/app.719cd027.js (491 KiB)
+  css/chunk-vendors.f2c4be22.css (298 KiB)
+  js/chunk-vendors.d83d700b.js (4.39 MiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (5.23 MiB)
+      css/chunk-vendors.f2c4be22.css
+      js/chunk-vendors.d83d700b.js
+      css/app.96d1c74a.css
+      js/app.719cd027.js
+
+
+Webpack Bundle Analyzer saved report to C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\editor-ui\dist\report.html
+[[90m23:01:02[39m] Using gulpfile ~\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\nodes-base\gulpfile.js
+[[90m23:01:02[39m] Starting 'build:icons'...
+  File                                   Size              Gzipped
+
+  dist\ts.worker.js                      4610.57 KiB       1033.84 KiB
+  dist\js\chunk-vendors.d83d700b.js      4500.17 KiB       1148.65 KiB
+  dist\js\app.719cd027.js                490.82 KiB        122.93 KiB
+  dist\json.worker.js                    248.83 KiB        74.50 KiB
+  dist\editor.worker.js                  123.58 KiB        40.85 KiB
+  dist\js\chunk-4301fce8.d032a636.js     121.50 KiB        32.94 KiB
+  dist\js\chunk-2d22d3e6.388c0a4c.js     28.89 KiB         7.23 KiB
+  dist\js\chunk-b1e1f7c0.92d036f0.js     5.93 KiB          2.11 KiB
+  dist\js\chunk-2d2073c1.f0370751.js     5.00 KiB          1.97 KiB
+  dist\css\chunk-vendors.f2c4be22.css    298.11 KiB        44.32 KiB
+  dist\css\app.96d1c74a.css              62.69 KiB         12.32 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+[[90m23:01:02[39m] Finished 'build:icons' after 226 ms
+[[90m23:01:03[39m] Using gulpfile ~\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\nodes-base\gulpfile.js
+[[90m23:01:03[39m] Starting 'build:translations'...
+Default locale set to: [35men[0m
+No translation required - Skipping translations build...
+[[90m23:01:03[39m] Finished 'build:translations' after 2.05 ms
+
+> n8n@0.162.0 build C:\Users\Guilherme Turtera\OneDrive\Documentos\Ploomes\n8n\CustomComponentTest\packages\cli
+> tsc
+
